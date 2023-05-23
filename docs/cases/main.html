@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>template CDN</title>
+    <title>MAIN</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.css">
 </head>
 <body>
@@ -20,11 +20,9 @@
                 <ul class="dropdown-menu">
                     <li class="dropdown-item">LOG IN</li>
                     <li class="dropdown-item">LOG OUT</li>
-                    <li class="dropdown-divider"></li>
-                    <form action="signup.html">
-                    <li class="dropdown-item">SIGN UP</li>
-                        <a class="nav-link" href="./signup.html"></a>
-                    </form>
+                    <li class="dropdown-item">SIGN UP
+                    <a class="nav-link" href="./signup.html"></a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -38,48 +36,92 @@
         이 설문은 건강과 웰빙에 대한 이해를 높이고 개인의 생활 습관을 분석하기 위해 실시되고 있습니다. 아래에는 몇 가지 질문을 준비했습니다. 이를 통해 여러분의 생활 습관을 알아보고 좀 더 건강한 삶을 위한 지속적인 개선을 도울 수 있습니다.
     </div>
 </div>
-    <div class="container m-5">
+<div class="container">
+    <form action="../index.html">
     <div class="row">
-        <div class="card col-4 p-3">
-        <form action=""> 
-        <div class="card-header bg-warning text-center h4">
+        <div class="card col-5 m-2 p-3">
+        <div class="card-header bg-warning text-center h5">
             하루 평균 수면 시간은?
         </div>
         <div class="card-body">
-            <li>4 시간 미만</li>
-            <li>4~6 시간 </li>
-            <li>7 시간 이상</li>
-        </div>     
-        </form>
+            <div class="form-check">
+                <label for="sleep" class="form-check-label">4 시간 미만</label>
+                <input type="radio" name="sleep_hours" id="sleep" value="4hrdown" class="form-check-input">
+            </div>
+            <div class="form-check">
+                <label for="sleep" class="form-check-label">4 ~ 6 시간</label>
+                <input type="radio" name="sleep_hours" id="sleep" value="from4to6hr" class="form-check-input">
+            </div>
+            <div class="form-check">
+                <label for="sleep" class="form-check-label">7 시간 이상</label>
+                <input type="radio" name="sleep_hours" id="sleep" value="7hrup" class="form-check-input">
+            </div>
+        </div>
         </div>
 
-        <div class="card col-4 p-3 ">
-        <form action="">
-        <div class="card-header bg-warning text-center h4">
+        <div class="card col-5 m-2 p-3 ">
+        <div class="card-header bg-warning text-center h5">
             일주일에 운동하는 횟수는?
         </div>
         <div class="card-body">
-            <li>0 회</li>
-            <li>1-3회</li>
-            <li>4회 이상</li>
+               <div class="form-check">
+                    <label for="exercise" class="form-check-label">0회</label>
+                    <input type="radio" name="workoutnumber" id="excrcise" value="0" class="form-check-input">
+                </div>
+                <div class="form-check">
+                    <label for="sleep" class="form-check-label">1-3회</label>
+                    <input type="radio" name="workoutnumber" id="exercise" value="from1to3" class="form-check-input">
+                </div>
+                <div class="form-check">
+                    <label for="sleep" class="form-check-label">4회 이상</label>
+                    <input type="radio" name="workoutnumber" id="exercise" value="4up" class="form-check-input">
+                </div>
         </div>
-        </form>
         </div>
-
-        <div class="card col-4 p-3 ">
-        <form action="">
-        <div class="card-header bg-warning text-center h4">
-            즐겨 마시는 주류는?
+        </div>
+        <div class="row">
+        <div class="card col-5 m-2 p-3 ">
+        <div class="card-header bg-warning text-center h5">
+            일주일 음주 횟수는?
         </div>
         <div class="card-body">
-            <li>맥주 </li>
-            <li>소주 </li>
-            <li>와인 </li>
+            <div class="form-check">
+                <label for="alcohol" class="form-check-label">0회</label>
+                <input type="radio" name="drinknumber" id="alcohol" value="0" class="form-check-input">
+            </div>
+            <div class="form-check">
+                <label for="sleep" class="form-check-label">1-3회</label>
+                <input type="radio" name="drinktnumber" id="alcohol" value="from1to3" class="form-check-input">
+            </div>
+            <div class="form-check">
+                <label for="sleep" class="form-check-label">4회 이상</label>
+                <input type="radio" name="drinknumber" id="alcohol" value="4up" class="form-check-input">
+            </div>
         </div>
-        </form>
         </div>
-    </div>
-    </div>
-   </div>
+        <div class="card col-5 m-2 p-3">
+            <div class="card-header bg-warning text-center h5">
+                스트레스 관리를 위한 방법은?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <label for="doing" class="form-check-label">운동</label>
+                    <input type="radio" name="stressout" id="doing" value="exercise" class="form-check-input">
+                </div>
+                <div class="form-check">
+                    <label for="sleep" class="form-check-label">영화 or 음악 감상</label>
+                    <input type="radio" name="stressout" id="doing" value="culture" class="form-check-input">
+                </div>
+                <div class="form-check">
+                    <label for="sleep" class="form-check-label">잠자기</label>
+                    <input type="radio" name="stressout" id="doing" value="nap" class="form-check-input">
+                </div>
+            </div>     
+            </div>
+        </div>
+    <button class="btn btn-primary">SUBMIT</button>
+    </form>
+</div>
+</body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </html>
